@@ -1,0 +1,44 @@
+.about {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #1a43e5;
+}
+
+.about h2 {
+    font-size: 2rem;
+    color:rgb(111, 0, 0);
+    margin-bottom: 20px;
+}
+
+.about-content{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    
+}
+.about-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+.about p {
+    font-size: 1rem;
+    color: white;
+    max-width: 600px;
+    margin: 0;
+    width: 50%
+}
+
+@media(max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-image, .about p{
+        width:100%;
+    }
+}
